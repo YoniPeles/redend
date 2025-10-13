@@ -1,0 +1,180 @@
+# Redstart Lisp Project .gitignore
+
+# ============================================
+# Compiled Lisp / Redstart Files
+# ============================================
+*.fasl
+*.fas
+*.lib
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+
+# ============================================
+# C++ Build Files (if building Redstart)
+# ============================================
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# ============================================
+# VSCode
+# ============================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# ============================================
+# Lisp-specific
+# ============================================
+*.lx64fsl
+*.lx32fsl
+*.dx64fsl
+*.dx32fsl
+*.wx64fsl
+*.wx32fsl
+*.fasl
+*.ufasl
+*.x86f
+*.err
+*~
+
+# Common Lisp FASL files
+**/*.fasl
+**/*.fas
+**/*.lib
+
+# Quicklisp (if used)
+quicklisp/
+
+# ASDF cache
+.cache/
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# WSL Specific
+# ============================================
+.wslconfig
+.wsl/
+
+# ============================================
+# Editor Backup Files
+# ============================================
+*~
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.orig
+\#*\#
+.#*
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+*.rel
+*.lbin
+session.*
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# ============================================
+# Logs and Databases
+# ============================================
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# ============================================
+# Testing
+# ============================================
+test-output/
+coverage/
+*.cover
+.coverage
+.pytest_cache/
+
+# ============================================
+# Environment and Config
+# ============================================
+.env
+.env.local
+.env.*.local
+*.secret
+secrets.json
+
+# ============================================
+# Dependencies
+# ============================================
+node_modules/
+vendor/
+
+# ============================================
+# Project Specific
+# ============================================
+# Add your custom patterns here
+output/
+dist/
+*.out
+debug/
+release/
+
+# Compiled Redstart scripts (if you compile them)
+*.rsto
+
+# Local development files
+scratch.lsp
+test.lsp
+playground.lsp
